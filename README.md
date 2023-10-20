@@ -46,7 +46,7 @@ You can also download our preprocessed source domain data set (Chikusei_imdb_128
 
 An example dataset folder has the following structure:
 ```
-datasets
+Datasets
 ├── Chikusei_imdb_128.pickle
 ├── IP
 │   ├── indian_pines.mat
@@ -61,7 +61,7 @@ datasets
 
 ## Usage:
 An example of DMCM:
-1. Download the required data set and move to folder`./datasets`.
+1. Download the required data set and move to folder`./Datasets`.
 2. If you down the source domain data set (Chikusei) in mat format,you need to run the script `Chikusei_imdb_128.py` to generate preprocessed source domain data. 
 3. Taking 5 labeled samples per class as an example, run `DAFSC-UP.py --test_lsample_num_per_class 5 --tar_input_dim 103`. 
  * `--test_lsample_num_per_class` denotes the number of labeled samples per class for the target domain data set.
