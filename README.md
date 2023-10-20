@@ -55,8 +55,8 @@ Datasets
 │   ├── paviaU.mat
 │   └── paviaU_gt.mat
 └── paviaU
-    ├── Pavia_center.mat
-    └── Pavia_center_gt.mat
+    ├── PaviaCenter.mat
+    └── PaviaCenter_gt.mat
 ```
 
 ## Usage:
