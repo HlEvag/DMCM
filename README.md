@@ -34,11 +34,11 @@ Matplotlib = 3.4.3
 Spectral = 0.22.4
 
 ## Dataset
-1. target domain data set: Indian Pines (IP)/ Pavia University (UP)/Pavia Center (PC)
+1. Target domain data set: Indian Pines (IP)/ Pavia University (UP)/Pavia Center (PC)
 
 You can download the hyperspectral datasets in mat format at: http://www.ehu.eus/ccwintco/index.php/Hyperspectral_Remote_Sensing_Scenes, and move the files to `./Datasets` folder.
 
-2. source domain data set: Chikusei
+2. Source domain data set: Chikusei
 
 The source domain  hyperspectral datasets (Chikusei) in mat format is available in: https://github.com/Li-ZK/DCFSL-2021 
  
