@@ -1,8 +1,10 @@
 ## Cross-Domain Meta-Learning under Dual Adjustment Mode for Few-Shot Hyperspectral Image Classification, TGRS, 2023.
-This is a code demo for the paper "Deep Cross-domain Few-shot Learning for Hyperspectral Image Classification"
+This is a code demo for the paper "Cross-Domain Meta-Learning under Dual Adjustment Mode for Few-Shot Hyperspectral Image Classification"
 
 Some of our code references the projects
-* [Learning to Compare: Relation Network for Few-Shot Learning](https://github.com/floodsung/LearningToCompare_FSL.git)
+* [Graph Information Aggregation Cross-Domain Few-Shot Learning for Hyperspectral Image Classification, TNNLS, 2022.](https://github.com/YuxiangZhang-BIT/IEEE_TNNLS_Gia-CFSL)
+* [Deep Cross-domain Few-shot Learning for Hyperspectral Image Classification, TGRS, 2022.](https://github.com/Li-ZK/DCFSL-2021)
+* [Few-shot Learning with Class-Covariance Metric for Hyperspectral Image Classification, TIP, 2022.](https://github.com/B-Xi/TIP_2022_CMFSL)
 
 
 ## Requirements
