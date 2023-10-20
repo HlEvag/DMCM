@@ -1,7 +1,7 @@
 ## Cross-Domain Meta-Learning under Dual Adjustment Mode for Few-Shot Hyperspectral Image Classification, TGRS, 2023.
 This is a code demo for the paper: [Cross-Domain Meta-Learning under Dual Adjustment Mode for Few-Shot Hyperspectral Image Classification.](https://doi.org/10.1109/TGRS.2023.3320657)
 
-<div align=center><img src="/Flowchart/Flowchart.tif" width="80%" height="80%"></div>
+<div align=center><img src="/Flowchart/Flowchart.png" width="65%" height="65%"></div>
 Fig. 1: Overall framework of the DMCM. The dual-adjustment mode-based cross-domain meta-learning framework comprises the following four parts: (a) feature extraction, (b) cross-domain FSL, (c) dual adjustment mode, and (d) target dataset classification.
 
 ## References
