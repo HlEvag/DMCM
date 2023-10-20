@@ -1,54 +1,66 @@
 ## Cross-Domain Meta-Learning under Dual Adjustment Mode for Few-Shot Hyperspectral Image Classification, TGRS, 2023.
-This is a code demo for the paper "Cross-Domain Meta-Learning under Dual Adjustment Mode for Few-Shot Hyperspectral Image Classification"
+This is a code demo for the paper: [Cross-Domain Meta-Learning under Dual Adjustment Mode for Few-Shot Hyperspectral Image Classification.](https://doi.org/10.1109/TGRS.2023.3320657)
 
-Some of our code references the projects
+## References
+If you find this code helpful, please kindly cite:
+```
+@article{hu2023cross,
+  title={Cross-Domain Meta-Learning under Dual Adjustment Mode for Few-Shot Hyperspectral Image Classification},
+  author={Hu, Lei and He, Wei and Zhang, Liangpei and Zhang, Hongyan},
+  journal={IEEE Transactions on Geoscience and Remote Sensing},
+  year={2023},
+  publisher={IEEE}
+}
+```
+
+Some of our references the projects, and we are very grateful for their research:
 * [Graph Information Aggregation Cross-Domain Few-Shot Learning for Hyperspectral Image Classification, TNNLS, 2022.](https://github.com/YuxiangZhang-BIT/IEEE_TNNLS_Gia-CFSL)
 * [Deep Cross-domain Few-shot Learning for Hyperspectral Image Classification, TGRS, 2022.](https://github.com/Li-ZK/DCFSL-2021)
 * [Few-shot Learning with Class-Covariance Metric for Hyperspectral Image Classification, TIP, 2022.](https://github.com/B-Xi/TIP_2022_CMFSL)
 
-
 ## Requirements
-CUDA = 10.0
+CUDA Version = 11.7
 
-Python = 3.7 
+Python = 3.9.7 
 
-Pytorch = 1.5 
+Pytorch = 1.12.0 
 
-sklearn = 0.23.2
+Sklearn = 0.24.2
 
-numpy = 1.19.2
+Numpy = 1.20.0
 
-## dataset
-1. target domain data set:
+Matplotlib = 3.4.3
 
-You can download the hyperspectral datasets in mat format at: http://www.ehu.eus/ccwintco/index.php/Hyperspectral_Remote_Sensing_Scenes, and move the files to `./datasets` folder.
+Spectral = 0.22.4
 
-2. source domain data set:
+## Dataset
+1. target domain data set: Indian Pines (IP)/ Pavia University (UP)/Pavia Center (PC)
 
-The source domain  hyperspectral datasets (Chikusei) in mat format is available in:https://pan.baidu.com/s/1Svt-8HC_FY3lQ1opO88X1A?pwd=6j42 
+You can download the hyperspectral datasets in mat format at: http://www.ehu.eus/ccwintco/index.php/Hyperspectral_Remote_Sensing_Scenes, and move the files to `./Datasets` folder.
+
+2. source domain data set: Chikusei
+
+The source domain  hyperspectral datasets (Chikusei) in mat format is available in: https://github.com/Li-ZK/DCFSL-2021 
  
-You can download the preprocessed source domain data set (Chikusei_imdb_128.pickle) directly in pickle format, which is available in "https://pan.baidu.com/s/1cbVzKSBxcWdOH5xGzwIlgA?pwd=5xk7" , and move the files to `./datasets` folder.
+You can also download our preprocessed source domain data set (Chikusei_imdb_128.pickle) directly in pickle format, please move to the `./Datasets` folder.
 
 An example dataset folder has the following structure:
 ```
 datasets
 ├── Chikusei_imdb_128.pickle
 ├── IP
-│   ├── indian_pines_corrected.mat
+│   ├── indian_pines.mat
 │   ├── indian_pines_gt.mat
-├── salinas
-│   ├── salinas_corrected.mat
-│   └── salinas_gt.mat
-├── pavia
-│   ├── pavia.mat
-│   └── pavia_gt.mat
+├── paviaU
+│   ├── paviaU.mat
+│   └── paviaU_gt.mat
 └── paviaU
-    ├── paviaU_gt.mat
-    └── paviaU.mat
+    ├── Pavia_center.mat
+    └── Pavia_center_gt.mat
 ```
 
 ## Usage:
-Take DCFSL method on the UP dataset as an example: 
+An example of DMCM:
 1. Download the required data set and move to folder`./datasets`.
 2. If you down the source domain data set (Chikusei) in mat format,you need to run the script `Chikusei_imdb_128.py` to generate preprocessed source domain data. 
 3. Taking 5 labeled samples per class as an example, run `DAFSC-UP.py --test_lsample_num_per_class 5 --tar_input_dim 103`. 
