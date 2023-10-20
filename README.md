@@ -16,7 +16,7 @@ If you find this code helpful, please kindly cite:
 }
 ```
 
-Some of our references the projects, and we are very grateful for their research:
+Some of our reference projects are listed below, and we are very grateful for their research:
 * [Graph Information Aggregation Cross-Domain Few-Shot Learning for Hyperspectral Image Classification, TNNLS, 2022.](https://github.com/YuxiangZhang-BIT/IEEE_TNNLS_Gia-CFSL)
 * [Deep Cross-domain Few-shot Learning for Hyperspectral Image Classification, TGRS, 2022.](https://github.com/Li-ZK/DCFSL-2021)
 * [Few-shot Learning with Class-Covariance Metric for Hyperspectral Image Classification, TIP, 2022.](https://github.com/B-Xi/TIP_2022_CMFSL)
