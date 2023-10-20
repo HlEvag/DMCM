@@ -42,7 +42,7 @@ You can download the hyperspectral datasets in mat format at: http://www.ehu.eus
 
 The source domain hyperspectral datasets (Chikusei) in mat format is available in: https://github.com/Li-ZK/DCFSL-2021. 
  
-You can also download our preprocessed source domain data set (Chikusei_imdb_128.pickle) directly in pickle format, please move to the `./Datasets` folder.
+You can also download our preprocessed source domain data set (Chikusei_imdb_128.pickle) directly in pickle format, please move to the `./Datasets` folder. However, the data is too large to upload, if necessary, please contact my email: hulei.eva@whu.edu.cn.
 
 An example dataset folder has the following structure:
 ```
@@ -62,7 +62,7 @@ Datasets
 ## Usage:
 An example of DMCM method:
 1. Download the required data set and move to folder`./Datasets`.
-2. If you down the source domain data set (Chikusei) in mat format, you need to run the script `Chikusei_imdb_128.py` to generate preprocessed source domain data. 
-3. Taking 5 labeled samples per class as an example, run `DAFSC-UP.py --test_lsample_num_per_class 5 --tar_input_dim 103`. 
+2. If you down the source domain data set (Chikusei) in mat format, you need to run the script `./Datasets/Generate_source_dataset.py` to generate preprocessed source domain data. 
+3. Taking 5 labeled samples per class as an example, run `DMCM_IP/UP/PC.py`. 
  * `--test_lsample_num_per_class` denotes the number of labeled samples per class for the target domain data set.
  * `--tar_input_dim` denotes the number of bands for the target domain data set.
